@@ -3,17 +3,8 @@ html, body {
   margin: 0;
   background-color: black;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 80px);
-  grid-auto-rows: 80px;
-  gap: 10px;
-}
-.span-2 {
-  grid-column: span 2;
-}
 
-.container{
+.container {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,19 +13,57 @@ html, body {
 }
 
 .input {
-  margin: 20px;
+  width: 330px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right; 
   border: none;
-    background-color: black;
-    color: white;
-    width: 330px;
-    height: 100px;
-    font-size: 60px;
-    font-weight: lighter;
-
-    
-    text-align: right; 
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
 }
 
+.display-current {
+  border-bottom: 0.5px solid;
+  font-size: 40px;
+}
+
+.display-previous {
+  height: 30px;
+  font-size: 16px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.storage-buttons-container {
+  display: flex;
+  gap: 8px;
+}
+
+.storage-btn {
+  width: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  background-color: #222222;
+  color: #f7f7f7;
+}
+
+.storage-btn:hover {
+  background-color: #737373; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-auto-rows: 80px;
+  gap: 10px;
+}
 
 button {
   border: none;
@@ -42,26 +71,31 @@ button {
   font-size: 30px;
 }
 
-  .gray-btn {
-    background-color: #9f9f9f;
-    color: #010101;
-  }
-  .dark-btn {
-    background-color: #313131;
-    color: #f7f7f7;
-  }
-
-.orange-btn {
-  background-color: #f69907;
-  color: #f6f6f6;
+.zero-btn  {
+  grid-column: span 2;
 }
 
+.gray-btn {
+  background-color: #9f9f9f;
+  color: #010101;
+  }
+
 .gray-btn:hover {
-color: #d9d9d9;
+  color: #d9d9d9;
+}
+  
+.dark-btn {
+  background-color: #313131;
+  color: #f7f7f7;
 }
 
 .dark-btn:hover {
   background-color: #737373; 
+}
+
+.orange-btn {
+  background-color: #f69907;
+  color: #f6f6f6;
 }
 
 .orange-btn:hover {
