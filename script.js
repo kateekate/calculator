@@ -18,7 +18,6 @@ let operator = '';
 let previousValue = '';
 let currentValue = '';
 
-
 operatorMemoryClear.addEventListener('click', function () {
   memoryValue = 0;
   displayPrevious.textContent = `Memory is clear.`;
